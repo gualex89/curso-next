@@ -1,0 +1,13 @@
+.link {
+  margin-right: 0.5rem; /* Equivalente a mr-2 */
+  transition: all 0.2s ease-in-out; /* Equivalente a transition-all */
+}
+
+.link:hover {
+  text-decoration: underline; /* Equivalente a hover:underline */
+  color: #60a5fa; /* Equivalente a hover:text-blue-400 (color azul de Tailwind) */
+}
+
+.active-link {
+  color: #3b82f6; /* Equivalente a text-blue-500 (color azul más fuerte de Tailwind) */
+}
