@@ -6,10 +6,15 @@ services:
     container_name: todos-db
     restart: always
     ports:
-      - "5432:5432"
+      - "5433:5432"  # Cambiado a 5433 en el host
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     volumes:
       - ./postgres:/var/lib/postgresql/data
+    networks:
+      - todos-network
 
+networks:
+  todos-network:
+    driver: bridge
